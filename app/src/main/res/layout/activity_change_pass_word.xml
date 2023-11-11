@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangePassWordActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/orange"
+            android:layout_marginBottom="20dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#FF9228"
+            app:endIconTint="#FF9228"
+            app:hintTextColor="#FF9228"
+            app:passwordToggleEnabled="true"
+            android:layout_marginVertical="10dp"
+            app:passwordToggleTint="#FF9228"
+            app:startIconDrawable="@drawable/baseline_lock"
+            app:startIconTint="#FF9228">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/changpwOldPw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật Khẩu Cũ"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+
+            app:boxStrokeColor="#FF9228"
+            app:endIconTint="#FF9228"
+            app:hintTextColor="#FF9228"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#FF9228"
+            app:startIconDrawable="@drawable/baseline_lock"
+            app:startIconTint="#FF9228">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/changpwNewPw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mật Khẩu Mới"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxStrokeColor="#FF9228"
+            app:endIconTint="#FF9228"
+            app:hintTextColor="#FF9228"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#FF9228"
+            android:layout_marginVertical="10dp"
+            app:startIconDrawable="@drawable/baseline_lock"
+            app:startIconTint="#FF9228">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/changpwcCfPw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nhập Lại Mật Khẩu Mới"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Đổi Mật Khẩu"
+        android:textStyle="bold"
+        android:backgroundTint="@color/orange"
+        android:textSize="22sp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnChangePW"/>
+</RelativeLayout>

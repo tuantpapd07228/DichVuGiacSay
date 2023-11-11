@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DichVuGiacSay</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="quen_matkhau">Quên mật khẩu?</string>
+    <string name="dang_ky">Đăng Ký</string>
+    <string name="dang_nhap">Đăng Nhập</string>
+    <string name="trang_chu">Trang Chủ</string>
+    <string name="yeu_thich">Yêu Thích</string>
+    <string name="lich_su">Lịch Sử</string>
+    <string name="tai_khoan">Tài Khoản</string>
+</resources>
